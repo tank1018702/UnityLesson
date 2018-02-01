@@ -38,7 +38,9 @@ public class Enemy : MonoBehaviour
             DirectionChange();
             
         }
-        gameObject.GetComponent<Rigidbody2D>().velocity =new Vector2(h,v) * MoveSpeed;
+        //gameObject.GetComponent<Rigidbody2D>().velocity =new Vector2(h,v) * MoveSpeed;
+        transform.Translate(new Vector3(h,v,0)*Time.deltaTime*MoveSpeed);
+            
 
     }
     private void Attack()
@@ -59,72 +61,80 @@ public class Enemy : MonoBehaviour
     private void DirectionChange()
     {
         int r = Random.Range(1, 3);
+        if(r==1)
+        {
+            transform.Rotate(0, 0, 90);
+        }
+        else
+        {
+            transform.Rotate(0, 0, -90);
+        }
 
-        if (h ==0&&v==1)
-        {
-            if(r==1)
-            {
-                h = -1;
-                v = 0;
-                transform.Rotate(0, 0, 90);
-            }
-            else
-            {
-                h = 1;
-                v = 0;
-                transform.Rotate(0, 0, -90);
-            }         
-            return;
-        }
-        if(h==-1&&v==0)
-        {
-            if(r==1)
-            {
-                h = 0;
-                v = -1;
-                transform.Rotate(0, 0, 90);
-            }
-            else
-            {
-                h = 0;
-                v = 1;
-                transform.Rotate(0, 0, -90);
-            }
+        //if (h ==0&&v==1)
+        //{
+        //    if(r==1)
+        //    {
+        //        //h = -1;
+        //        //v = 0;
+        //        transform.Rotate(0, 0, 90);
+        //    }
+        //    else
+        //    {
+        //        //h = 1;
+        //        //v = 0;
+        //        transform.Rotate(0, 0, -90);
+        //    }         
+        //    return;
+        //}
+        //if(h==-1&&v==0)
+        //{
+        //    if(r==1)
+        //    {
+        //        //h = 0;
+        //        //v = -1;
+        //        transform.Rotate(0, 0, 90);
+        //    }
+        //    else
+        //    {
+        //        //h = 0;
+        //        //v = 1;
+        //        transform.Rotate(0, 0, -90);
+        //    }
            
-            return;
-        }
-        if(h==0&&v==-1)
-        {
-            if(r==1)
-            {
-                h=1;
-                v=0;
-                transform.Rotate(0, 0, 90);
-            }
-            else
-            {
-                h = -1;
-                v = 0;
-                transform.Rotate(0, 0, -90);
-            }          
-            return;
-        }
-        if(h==1&&v==0)
-        {
-            if(r==1)
-            {
-                h = 0;
-                v = 1;
-                transform.Rotate(0, 0, 90);
-            }
-            else
-            {
-                h = 0;
-                v = -1;
-                transform.Rotate(0, 0, -90);
-            }        
-            return;
-        }
+        //    return;
+        //}
+        //if(h==0&&v==-1)
+        //{
+        //    if(r==1)
+        //    {
+        //        //h = 1;
+        //        //v = 0;
+        //        transform.Rotate(0, 0, 90);
+        //    }
+        //    else
+        //    {
+        //        //h = -1;
+        //        //v = 0;
+        //        transform.Rotate(0, 0, -90);
+        //    }          
+        //    return;
+        //}
+        //if(h==1&&v==0)
+        //{
+        //    if(r==1)
+        //    {
+        //        //h = 0;
+        //        //v = 1;
+        //        transform.Rotate(0, 0, 90);
+        //    }
+        //    else
+        //    {
+        //        //h = 0;
+        //        //v = -1;
+        //        transform.Rotate(0, 0, -90);
+        //    }        
+        //    return;
+        //}
 
     }
 

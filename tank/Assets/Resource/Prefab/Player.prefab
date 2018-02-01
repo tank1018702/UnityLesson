@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 5
-  Bullet: {fileID: 1227607276374518, guid: 97ef1c5eb20fa5741848e9e4862605e5, type: 2}
+  Bullet: {fileID: 0}
   FireAudio: {fileID: 8300000, guid: 4b4363003d904624f89fb930c3522b7e, type: 3}
 --- !u!212 &212008758687044122
 SpriteRenderer:
