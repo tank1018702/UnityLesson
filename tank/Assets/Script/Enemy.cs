@@ -14,6 +14,11 @@ public class Enemy : MonoBehaviour
 
     public SpriteRenderer tank;
 
+    public AudioClip FireAudio;
+
+    int h = 0;
+    int v = 1;
+
     public float PlayerDetectionDistance = 10;
     public float WallDetectionDistance = 2;
 
@@ -25,16 +30,15 @@ public class Enemy : MonoBehaviour
         RaycastHit2D FoundWall = Physics2D.Raycast(transform.position, transform.up, WallDetectionDistance, 1 << LayerMask.NameToLayer("wall"));
         
         if(FoundPlayer)
-        {
-            Debug.LogError("2222");
+        {         
             Attack();
         }
         if(FoundWall)
-        {
-            Debug.LogError("2222");
+        {     
             DirectionChange();
+            
         }
-        gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.up * MoveSpeed;
+        gameObject.GetComponent<Rigidbody2D>().velocity =new Vector2(h,v) * MoveSpeed;
 
     }
     private void Attack()
@@ -48,18 +52,80 @@ public class Enemy : MonoBehaviour
     }
     private void CreateBullet()
     {
+        AudioSource.PlayClipAtPoint(FireAudio, transform.position);
         GameObject go = GameObject.Instantiate(Bullet, transform.position, Quaternion.Euler(transform.eulerAngles));
         go.SetActive(true);
     }
     private void DirectionChange()
     {
-        Debug.LogError("11111");
         int r = Random.Range(1, 3);
-        if(r==1)
+
+        if (h ==0&&v==1)
         {
-            transform.Rotate(0, 0, 90);
+            if(r==1)
+            {
+                h = -1;
+                v = 0;
+                transform.Rotate(0, 0, 90);
+            }
+            else
+            {
+                h = 1;
+                v = 0;
+                transform.Rotate(0, 0, -90);
+            }         
+            return;
         }
-        transform.Rotate(0, 0, -90);
+        if(h==-1&&v==0)
+        {
+            if(r==1)
+            {
+                h = 0;
+                v = -1;
+                transform.Rotate(0, 0, 90);
+            }
+            else
+            {
+                h = 0;
+                v = 1;
+                transform.Rotate(0, 0, -90);
+            }
+           
+            return;
+        }
+        if(h==0&&v==-1)
+        {
+            if(r==1)
+            {
+                h=1;
+                v=0;
+                transform.Rotate(0, 0, 90);
+            }
+            else
+            {
+                h = -1;
+                v = 0;
+                transform.Rotate(0, 0, -90);
+            }          
+            return;
+        }
+        if(h==1&&v==0)
+        {
+            if(r==1)
+            {
+                h = 0;
+                v = 1;
+                transform.Rotate(0, 0, 90);
+            }
+            else
+            {
+                h = 0;
+                v = -1;
+                transform.Rotate(0, 0, -90);
+            }        
+            return;
+        }
+
     }
 
     void Start ()
@@ -70,10 +136,10 @@ public class Enemy : MonoBehaviour
 	
 	void Update ()
     {
-        ControlMethod();
+        
     }
     private void FixedUpdate()
     {
-        
+        ControlMethod();
     }
 }

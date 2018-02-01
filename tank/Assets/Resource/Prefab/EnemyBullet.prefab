@@ -20,7 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4131117061950650}
   - component: {fileID: 212079893815814666}
-  - component: {fileID: 114175394373570530}
+  - component: {fileID: 114405054821132012}
+  - component: {fileID: 61316617715263740}
+  - component: {fileID: 50845190889101752}
   m_Layer: 0
   m_Name: EnemyBullet
   m_TagString: Untagged
@@ -41,7 +43,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114175394373570530
+--- !u!50 &50845190889101752
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389556243495912}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &61316617715263740
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1389556243495912}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.15, y: 0.15}
+    newSize: {x: 0.15, y: 0.15}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.15, y: 0.15}
+  m_EdgeRadius: 0
+--- !u!114 &114405054821132012
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,10 +96,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1389556243495912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e73e3fdded844e4496b4b1bb6ac9e80, type: 3}
+  m_Script: {fileID: 11500000, guid: 37f78d4376190b648b961d0bf07d5efd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MoveSpeed: 10
+  ExplosionAnimation: {fileID: 1479701397635096, guid: c50255a68805c3c45a848df8d15b43fa,
+    type: 2}
+  HitAudio: {fileID: 8300000, guid: a36f2278a85dfc8458b569c2b95bacb6, type: 3}
 --- !u!212 &212079893815814666
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -12,10 +12,12 @@ public class Player : MonoBehaviour
     /// 坦克炮弹
     /// </summary>
     public GameObject Bullet;
-    
 
+    public AudioClip FireAudio;
+    
     private void CreateBullet()
     {
+        AudioSource.PlayClipAtPoint(FireAudio, transform.position);
         GameObject go = GameObject.Instantiate(Bullet, transform.position, Quaternion.Euler(transform.eulerAngles));
         go.SetActive(true);
     }
@@ -27,8 +29,6 @@ public class Player : MonoBehaviour
         {
             v = 0;
         }
-
-
         if (h > 0)
         {
             transform.rotation = Quaternion.Euler(new Vector3(0,0,270));
@@ -54,7 +54,6 @@ public class Player : MonoBehaviour
         {
             CreateBullet();
         }
-
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(h, v) * MoveSpeed;
     }
     void Start()

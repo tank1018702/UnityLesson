@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 212141492031039010}
   - component: {fileID: 114873172786609718}
   - component: {fileID: 50613516955603538}
+  - component: {fileID: 61313265895413698}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1818580918204174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.907, y: 0, z: 0}
+  m_LocalPosition: {x: 3.27, y: 0.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,6 +63,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &61313265895413698
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1818580918204174}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.28, y: 0.28}
+    newSize: {x: 0.28, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.28, y: 0.28}
+  m_EdgeRadius: 0
 --- !u!114 &114873172786609718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,11 +107,13 @@ MonoBehaviour:
   - {fileID: 21300068, guid: 3348c3d1a93bce84fba2264f6a8458f4, type: 3}
   - {fileID: 21300072, guid: 3348c3d1a93bce84fba2264f6a8458f4, type: 3}
   - {fileID: 21300076, guid: 3348c3d1a93bce84fba2264f6a8458f4, type: 3}
-  MoveSpeed: 5
-  Bullet: {fileID: 0}
+  MoveSpeed: 1
+  AttackSpeed: 0.5
+  Bullet: {fileID: 1389556243495912, guid: fdf08d30b5093494c88fb6bcb37664e5, type: 2}
   tank: {fileID: 212141492031039010}
+  FireAudio: {fileID: 8300000, guid: 4b4363003d904624f89fb930c3522b7e, type: 3}
   PlayerDetectionDistance: 10
-  WallDetectionDistance: 0.5
+  WallDetectionDistance: 0.2
 --- !u!212 &212141492031039010
 SpriteRenderer:
   m_ObjectHideFlags: 1
