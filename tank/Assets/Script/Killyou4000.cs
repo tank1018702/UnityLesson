@@ -14,6 +14,6 @@ public class Killyou4000 : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        transform.Rotate(new Vector3(0,0,10),Space.Self);
+        transform.Rotate(new Vector3(0,0,20),Space.Self);
 	}
 }

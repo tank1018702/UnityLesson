@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
 
     public AudioClip FireAudio;
 
+    RaycastHit2D FoundWall;
+
     int h = 0;
     int v = 1;
 
@@ -23,20 +25,28 @@ public class Enemy : MonoBehaviour
     public float WallDetectionDistance = 2;
 
 
-
+    /// <summary>
+    /// 错误用法
+    /// </summary>
     private void ControlMethod()
     {
         RaycastHit2D FoundPlayer = Physics2D.Raycast(transform.position, transform.up, PlayerDetectionDistance, 1 << LayerMask.NameToLayer("player"));
-        RaycastHit2D FoundWall = Physics2D.Raycast(transform.position, transform.up, WallDetectionDistance, 1 << LayerMask.NameToLayer("wall"));
+         FoundWall = Physics2D.Raycast(transform.position, transform.up, WallDetectionDistance, 1 << LayerMask.NameToLayer("wall"));
+        
+
         
         if(FoundPlayer)
         {         
             Attack();
         }
-        if(FoundWall)
-        {     
+        if (FoundWall)
+        {
             DirectionChange();
-            
+
+        }
+        else
+        {
+            Debug.LogError("loglogloglog");
         }
         //gameObject.GetComponent<Rigidbody2D>().velocity =new Vector2(h,v) * MoveSpeed;
         transform.Translate(new Vector3(h,v,0)*Time.deltaTime*MoveSpeed);
