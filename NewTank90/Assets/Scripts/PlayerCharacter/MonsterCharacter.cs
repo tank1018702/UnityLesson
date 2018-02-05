@@ -10,4 +10,10 @@ public class MonsterCharacter:Character
     {
         this.CharacObj = obj;
     }
+
+    public override void OnDisable()
+    {
+        base.OnDisable();
+        ItemDropManager.Instance.ItemDrop(transform.position, transform);
+    }
 }

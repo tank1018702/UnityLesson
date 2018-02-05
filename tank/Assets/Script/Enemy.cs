@@ -44,10 +44,6 @@ public class Enemy : MonoBehaviour
             DirectionChange();
 
         }
-        else
-        {
-            Debug.LogError("loglogloglog");
-        }
         //gameObject.GetComponent<Rigidbody2D>().velocity =new Vector2(h,v) * MoveSpeed;
         transform.Translate(new Vector3(h,v,0)*Time.deltaTime*MoveSpeed);
             

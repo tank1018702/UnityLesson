@@ -300,6 +300,8 @@
     <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyBullet.cs" />
     <Compile Include="Assets\Script\IronWall.cs" />
+    <Compile Include="Assets\Script\Item\Item.cs" />
+    <Compile Include="Assets\Script\Item\ItemDrop.cs" />
     <Compile Include="Assets\Script\Killyou1000.cs" />
     <Compile Include="Assets\Script\Killyou4000.cs" />
     <Compile Include="Assets\Script\Missile.cs" />

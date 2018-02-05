@@ -94,7 +94,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 135
+  controlID: 128
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -453,19 +453,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Resources/Picture
+    - Assets/Resources/Audio
   m_ViewMode: 1
-  m_StartGridSize: 39
+  m_StartGridSize: 46
   m_LastFolders:
-  - Assets/Resources/Picture
-  m_LastFoldersGridSize: 39
+  - Assets/Resources/Audio
+  m_LastFoldersGridSize: 46
   m_LastProjectPath: E:\shenyan_unity\NewTank90
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e280000
-    m_LastClickedID: 10286
-    m_ExpandedIDs: 0000000082270000a4280000ffffff7f
+    m_SelectedIDs: c6270000
+    m_LastClickedID: 10182
+    m_ExpandedIDs: 000000008827000052280000c2280000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -493,7 +493,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000082270000a4280000fc280000
+    m_ExpandedIDs: 00000000882700004228000052280000c22800001e290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,7 +546,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 39
+    m_GridSize: 46
   m_DirectoriesAreaWidth: 253
 --- !u!114 &17
 MonoBehaviour:
@@ -664,14 +664,14 @@ MonoBehaviour:
     height: 575
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 5179.49112624274
+  lastFramingTime: 11339.219990336911
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -2.9297888, y: 1.1651411, z: 96.97631}
+    m_Target: {x: -2.2110176, y: 1.2404597, z: 96.96398}
     speed: 2
-    m_Value: {x: -2.9297888, y: 1.1651411, z: 96.97631}
+    m_Value: {x: -2.2110176, y: 1.2404597, z: 96.96398}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -699,9 +699,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 14.316744
+    m_Target: 22
     speed: 2
-    m_Value: 14.316744
+    m_Value: 22
   m_Ortho:
     m_Target: 1
     speed: 2
