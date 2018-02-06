@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 222610434156564496}
   - component: {fileID: 114101503258757214}
   m_Layer: 0
-  m_Name: Item
+  m_Name: DropItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc1acce4b83e40f498cc5226c0350432, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemicon: {fileID: 114101503258757214}
 --- !u!222 &222610434156564496
 CanvasRenderer:
   m_ObjectHideFlags: 1

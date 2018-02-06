@@ -5,17 +5,10 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-    
-
-    
-
-    private void GetDrop()
+    public Image itemicon;
+    public  void SetData(Sprite icon)
     {
-        //int r = Random.Range(0, 5);
-        transform.GetComponent<Image>().sprite = 
-
-
-    }
-
-	
+        
+        itemicon.sprite = icon;
+    }	
 }

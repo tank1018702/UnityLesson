@@ -154,6 +154,11 @@ public class Enemy : MonoBehaviour
     {
         
     }
+    private void OnDestroy()
+    {
+        Transform parent = GameObject.FindGameObjectWithTag("Canvas").transform;
+        ItemDropManager.ItemDrop(transform.position, Vector3.one,parent);
+    }
     private void FixedUpdate()
     {
         ControlMethod();

@@ -9,6 +9,7 @@ TagManager:
   - ironwall
   - enemy
   - player
+  - Canvas
   layers:
   - Default
   - TransparentFX
