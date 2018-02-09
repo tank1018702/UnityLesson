@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public GameObject Bullet;
 
     public AudioClip FireAudio;
+
+    public GameObject itembag;
     
     private void CreateBullet()
     {

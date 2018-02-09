@@ -102,6 +102,7 @@ MonoBehaviour:
   MoveSpeed: 5
   Bullet: {fileID: 1236311973832568, guid: 238afc5504a87f74b82ce2a8f2f674c9, type: 2}
   FireAudio: {fileID: 8300000, guid: 4b4363003d904624f89fb930c3522b7e, type: 3}
+  itembag: {fileID: 0}
 --- !u!212 &212008758687044122
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -268,6 +270,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets/plugins/LitJson.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/Users/meta42games/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -297,17 +302,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Enemy.cs" />
-    <Compile Include="Assets\Script\EnemyBullet.cs" />
+    <Compile Include="Assets\Script\Charater\Enemy.cs" />
+    <Compile Include="Assets\Script\Charater\Player.cs" />
     <Compile Include="Assets\Script\IronWall.cs" />
     <Compile Include="Assets\Script\Item\Item.cs" />
     <Compile Include="Assets\Script\Item\ItemDrop.cs" />
-    <Compile Include="Assets\Script\Killyou1000.cs" />
-    <Compile Include="Assets\Script\Killyou4000.cs" />
-    <Compile Include="Assets\Script\Missile.cs" />
-    <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\PlayerBullet.cs" />
+    <Compile Include="Assets\Script\Item\ItemInfo.cs" />
+    <Compile Include="Assets\Script\ItemBag\ItemBagPanel.cs" />
+    <Compile Include="Assets\Script\ItemBag\ItemDetail.cs" />
     <Compile Include="Assets\Script\TimeLapseAnimation.cs" />
+    <Compile Include="Assets\Script\UIControl\BagControl.cs" />
+    <Compile Include="Assets\Script\UIControl\ItemDetailContorl.cs" />
+    <Compile Include="Assets\Script\Weapons\EnemyBullet.cs" />
+    <Compile Include="Assets\Script\Weapons\Killyou1000.cs" />
+    <Compile Include="Assets\Script\Weapons\Killyou4000.cs" />
+    <Compile Include="Assets\Script\Weapons\Missile.cs" />
+    <Compile Include="Assets\Script\Weapons\PlayerBullet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
