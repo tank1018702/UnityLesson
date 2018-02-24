@@ -26,7 +26,7 @@ public class AAG_Controller : MonoBehaviour
         {
             if (TargetList[0] != null)
             {
-                TargetPosition = TargetList[0].transform.position;
+                TargetPosition = TargetList[0].transform.GetChild(0).position;
             }
         }
         else

@@ -11,7 +11,7 @@ public class Radar : MonoBehaviour
     public GameObject textobj;
 
     [ContextMenu("text")]
-    public void text()
+    public void Text()
     {
         Targets.Add(textobj);
     }
@@ -28,8 +28,7 @@ public class Radar : MonoBehaviour
         if(collision.gameObject.tag=="Missile")
         {
             Targets.Add(collision.gameObject);
-        }
-        
+        }    
     }
     public void OnTriggerStay2D(Collider2D collision)
     {
@@ -42,8 +41,7 @@ public class Radar : MonoBehaviour
         if(collision.gameObject.tag == "Missile")
         {
             Targets.Remove(collision.gameObject);
-        }
-        
+        }  
     }
 
 

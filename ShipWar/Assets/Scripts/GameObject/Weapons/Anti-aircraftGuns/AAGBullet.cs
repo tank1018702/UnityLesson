@@ -12,14 +12,26 @@ public class AAGBullet : MonoBehaviour
 
     public int damage;
 
+    Timer timer;
+
+    private void Start()
+    {
+        damage = 1;
+
+        
+    }
+    private void OnEnable()
+    {
+        timer = new Timer(1f);
+        timer.OnEnd = () => { gameObject.SetActive(false); };
+        timer.Start();
+    }
+
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.up * MoveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.up * MoveSpeed * Time.fixedDeltaTime);
     }
-    private void OnBecameInvisible()
-    {
-        gameObject.SetActive(false);
-    }
+    
 
 }
 

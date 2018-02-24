@@ -48,7 +48,7 @@ public class Timer
         {
             return;
         }
-        CurTime += Time.deltaTime;
+        CurTime += 0.02f;
         if(CurTime>EndTime)
         {
             End();

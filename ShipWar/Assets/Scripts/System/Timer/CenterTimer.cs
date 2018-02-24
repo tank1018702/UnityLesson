@@ -19,10 +19,14 @@ public class CenterTimer : MonoBehaviour
 
     private void Update()
     {
+       
+    }
+    private void FixedUpdate()
+    {
         for (int i = 0; i < Timers.Count; i++)
         {
             Timers[i].Update();
-        }         
+        }
     }
 
 }

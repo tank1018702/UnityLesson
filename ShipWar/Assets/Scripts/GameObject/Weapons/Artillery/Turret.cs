@@ -9,12 +9,7 @@ public class Turret : MonoBehaviour
 
     private void Update()
     {
-        //transform.rotation = Quaternion.Slerp(transform.rotation, DirectionAngle(), TurretSpeed * Time.deltaTime);
-
         transform.Rotate(DirectionAngle().eulerAngles);
-
-        
-
     }
 
     private void FixedUpdate()
@@ -67,30 +62,16 @@ public class Turret : MonoBehaviour
     {
         
         Vector2 Direcition = (Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position)).normalized;
-
-        
-
         float _DirectionAngle = Vector3.Angle(transform.up, Direcition);
 
         //float _DirectionAngle = Mathf.Atan2(Direcition.y, Direcition.x) * Mathf.Rad2Deg;
-
-
-
-
 
         float Dot = Vector3.Dot(Direcition, transform.right);
         if (Dot >= 0)
         {
             _DirectionAngle = (360 - _DirectionAngle);
         }
-
-        
-
         return Quaternion.Euler(0, 0,_DirectionAngle /*Mathf.Lerp(0, _DirectionAngle, TurretSpeed*Time.deltaTime)*/);
-
-
-        
-
     }
 
 

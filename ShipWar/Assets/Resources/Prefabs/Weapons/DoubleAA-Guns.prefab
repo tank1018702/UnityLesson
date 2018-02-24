@@ -85,11 +85,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Canfire: 0
-  bullet: {fileID: 1775115590422238, guid: 38efd0fdb71f0ee43979bd3d148a3cde, type: 2}
   muzzle_1: {fileID: 1227914484214660}
   muzzle_2: {fileID: 1249881924587744}
   offset: 0
   FiringInterval: 0
+  Damage: 0
 --- !u!212 &212045983837991522
 SpriteRenderer:
   m_ObjectHideFlags: 1

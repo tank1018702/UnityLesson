@@ -9,6 +9,8 @@ public class BarrelFire : MonoBehaviour
     /// 炮口
     /// </summary>
     public GameObject BarrelMuzzle;
+
+    public GameObject FireAnimationPosition;
     /// <summary>
     /// 子弹角度偏移
     /// </summary>
@@ -17,6 +19,8 @@ public class BarrelFire : MonoBehaviour
     /// 射击间隔时间
     /// </summary>
     public float FiringInterval;
+
+    public GameObject FireAnimation;
 
     private bool Canfire = true;
     Timer timer;
@@ -41,6 +45,7 @@ public class BarrelFire : MonoBehaviour
         Vector3 OffsetAngle = new Vector3(0, 0, Random.Range(-Offset, Offset));
         GameObject BulletGo = Instantiate(Bullet, BarrelMuzzle.transform.position, Quaternion.Euler(transform.eulerAngles + OffsetAngle));
         BulletGo.SetActive(true);
+        Instantiate(FireAnimation, FireAnimationPosition.transform.position, transform.rotation);
 
         timer = new Timer(FiringInterval);
         timer.OnStart = () => { Canfire = false; };
