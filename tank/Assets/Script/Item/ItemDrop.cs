@@ -74,10 +74,7 @@ public class ItemDropManager
         Item itemscript = item.GetComponent<Item>();
         if (itemscript != null)
         {
-            itemscript.SetData(GetItemInfo());
-
-            
-           
+            itemscript.SetData(GetItemInfo());        
         }
 
     }

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5245736c605aa3f479bcfb334726c4c8
+timeCreated: 1520316906
+licenseType: Pro
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - DeathAnim: {fileID: 198795102294991462, guid: 92e0af67696d268408d8c0b66864b748,
+      type: 2}
+  executionOrder: 0
+  icon: {fileID: 8220585740371884164, guid: 0000000000000000d000000000000000, type: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

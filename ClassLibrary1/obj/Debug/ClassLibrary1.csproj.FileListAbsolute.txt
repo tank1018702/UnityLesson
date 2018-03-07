@@ -1,0 +1,8 @@
+E:\shenyan_unity\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+E:\shenyan_unity\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+E:\shenyan_unity\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+E:\shenyan_unity\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+E:\shenyan_unity\ClassLibrary1\bin\Debug\UnityEngine.dll
+E:\shenyan_unity\ClassLibrary1\bin\Debug\UnityEngine.xml
+E:\shenyan_unity\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+E:\shenyan_unity\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
