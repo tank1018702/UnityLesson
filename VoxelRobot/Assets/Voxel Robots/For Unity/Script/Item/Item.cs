@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using MoenenGames.VoxelRobot;
 
 public class Item : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class Item : MonoBehaviour
 
     public int Rate;
 
-    public float hp;
+    public int hp;
 
     public int money;
 
@@ -44,7 +46,10 @@ public class Item : MonoBehaviour
     {
         if(collision.transform.tag=="Player")
         {
-           //var scrpt= collision.transform.GetComponent<CharacterInfo>();
+            collision.gameObject.GetComponent<CharatherInfo>().GetItem(hp,money);
+
+
+
 
             Destroy(gameObject);
 

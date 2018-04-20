@@ -31,7 +31,7 @@ public class Missile : MonoBehaviour
             
             float angle = Vector3.Angle(transform.up, Direcition);
         
-            transform.Rotate(Vector3.Cross(transform.up, Direcition), Mathf.Min(3,angle));
+            transform.Rotate(Vector3.Cross(transform.up, Direcition), Mathf.Min(1f,angle));
         }
         if(HP<=0)
         {

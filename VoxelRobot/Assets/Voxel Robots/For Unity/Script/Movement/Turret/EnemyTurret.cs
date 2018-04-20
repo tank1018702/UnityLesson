@@ -12,12 +12,6 @@ public class EnemyTurret : Turret
 
     public float DetectionDistance;
 
-    private bool fire=false;
-    //void Start ()
-    //   {
-
-    //}
-
 
     protected override void Update ()
     {
@@ -28,7 +22,6 @@ public class EnemyTurret : Turret
            Quaternion.LookRotation(Target.transform.position - transform.position, Vector3.up), Time.deltaTime * RotateSpeed);
             Rotate(aimRot.eulerAngles.y);
         }
-       
 	}
 
     

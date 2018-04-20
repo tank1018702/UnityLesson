@@ -375,7 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 512b8673106f2a14491c9e7ae622ed7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 0}
+  t: {fileID: 96000011300866238}
   damegeType: 0
   LifeTime: 1
   DontDestroyOnHit: 0

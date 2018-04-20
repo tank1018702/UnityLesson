@@ -367,6 +367,7 @@ GameObject:
   - component: {fileID: 143420523212722696}
   - component: {fileID: 136453198529737952}
   - component: {fileID: 195414706201711454}
+  - component: {fileID: 114046069204646174}
   m_Layer: 9
   m_Name: Enemy_Killer
   m_TagString: Enemy
@@ -530,7 +531,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1962589891998460}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 413.1326, y: 0, z: 351.7324}
+  m_LocalPosition: {x: -35.28752, y: 0, z: -17.060867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4340086638923880}
@@ -1134,6 +1135,21 @@ MonoBehaviour:
   StepDistance: 0.3
   ConflictLegA: {fileID: 114327539923443454}
   ConflictLegB: {fileID: 114035627729923814}
+--- !u!114 &114046069204646174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1962589891998460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb252a5e30c01048a6db71f2ef7e1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rectBloodPos: {fileID: 0}
+  curHP: 0
+  maxHP: 0
+  maxHPSlider: {fileID: 0}
 --- !u!114 &114098682080592168
 MonoBehaviour:
   m_ObjectHideFlags: 1

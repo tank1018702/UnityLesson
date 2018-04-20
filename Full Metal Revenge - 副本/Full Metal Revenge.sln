@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge", "Full Metal Revenge.csproj", "{FA2898F4-683E-F5EF-1036-F8FF69EF448C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge.Editor", "Full Metal Revenge.Editor.csproj", "{69BE97DA-A83E-C9F1-66A5-D392453B3F96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA2898F4-683E-F5EF-1036-F8FF69EF448C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA2898F4-683E-F5EF-1036-F8FF69EF448C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA2898F4-683E-F5EF-1036-F8FF69EF448C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA2898F4-683E-F5EF-1036-F8FF69EF448C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69BE97DA-A83E-C9F1-66A5-D392453B3F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69BE97DA-A83E-C9F1-66A5-D392453B3F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69BE97DA-A83E-C9F1-66A5-D392453B3F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69BE97DA-A83E-C9F1-66A5-D392453B3F96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

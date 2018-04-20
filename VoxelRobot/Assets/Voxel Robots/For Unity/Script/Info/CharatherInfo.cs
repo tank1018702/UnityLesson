@@ -17,20 +17,25 @@ public class CharatherInfo : MonoBehaviour
 
     private int Cur_hp;
 
+    public int Coin;
+
     void Start()
     {
         Cur_hp = Max_hp;
         isAlive = true;
 
+
         GetComponent<ShowHP>().maxHP = Max_hp;
+
+
     }
 
 
     void Update()
     {
-        if(transform.tag=="Player")
+        if (transform.tag == "Player")
         {
-            
+            Debug.Log(Cur_hp);
         }
         if (Cur_hp == 0)
         {
@@ -38,22 +43,30 @@ public class CharatherInfo : MonoBehaviour
         }
         Cur_hpUpdate();
 
-        
+
     }
 
     void Cur_hpUpdate()
     {
+
+
         GetComponent<ShowHP>().curHP = Cur_hp;
+
     }
 
     void DestoryCharacter()
     {
-       Destroy (GetComponent<ShowHP>().maxHPSlider.gameObject);
-        if(transform.tag=="Enemy")
+
+        if (transform.tag == "Enemy")
         {
+            Destroy(GetComponent<ShowHP>().maxHPSlider.gameObject);
             GetComponent<NavMeshAgent>().updatePosition = false;
             GetComponent<NavMeshAgent>().updateRotation = false;
-        } 
+        }
+        if(transform.tag=="Player")
+        {
+            Destroy(GetComponent<ShowHP>().maxHPSlider.gameObject);
+        }
         Destroy(gameObject);
     }
     public void Cost_hp(int damage)
@@ -65,14 +78,20 @@ public class CharatherInfo : MonoBehaviour
             isAlive = false;
         }
     }
-    public void GetCoin()
+    public void GetItem(int hp, int coin)
     {
+        Cur_hp += hp;
+        if (Cur_hp > Max_hp)
+        {
+            Cur_hp = Max_hp;
+        }
+        Coin += coin;
 
     }
     void DropItem()
     {
         int r = Random.Range(0, 101);
-        
+
         if (DropItemList.Count != 0)
         {
             for (int i = 0; i < DropItemList.Count; i++)
@@ -92,7 +111,7 @@ public class CharatherInfo : MonoBehaviour
     }
     private void OnDestroy()
     {
-        if(gameObject.tag=="Enemy")
+        if (gameObject.tag == "Enemy")
         {
             DropItem();
         }

@@ -3,12 +3,14 @@
 	using System.Collections;
 
 	[RequireComponent(typeof(Light))]
-	public class LerpLight : MonoBehaviour {
+	public class LerpLight : MonoBehaviour
+    {
 
 
 
 		// Shot Cut
-		private Light TheLight {
+		private Light TheLight
+        {
 			get {
 				if (!theLight) {
 					theLight = GetComponent<Light>();
@@ -34,13 +36,17 @@
 
 
 
-		void Update () {
-			if (Moving) {
+		void Update ()
+        {
+			if (Moving)
+            {
 				TheLight.intensity = Mathf.Lerp(TheLight.intensity, AimIntensity, Time.deltaTime * LerpRate);
-				if (Mathf.Abs(TheLight.intensity - AimIntensity) < 0.01f) {
+				if (Mathf.Abs(TheLight.intensity - AimIntensity) < 0.01f)
+                {
 					TheLight.intensity = AimIntensity;
 					Moving = false;
-					if (AimIntensity <= 0f) {
+					if (AimIntensity <= 0f)
+                    {
 						TheLight.enabled = false;
 					}
 				}
@@ -50,7 +56,8 @@
 
 
 
-		public void TriggerOn (float intensity = -1f) {
+		public void TriggerOn (float intensity = -1f)
+        {
 			Moving = true;
 			TheLight.intensity = intensity < 0 ? FullIntensity : intensity;
 			TheLight.enabled = true;

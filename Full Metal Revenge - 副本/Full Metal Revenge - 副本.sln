@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge - 副本.Plugins", "Full Metal Revenge - 副本.Plugins.csproj", "{FE34D2DA-5091-AA61-94AC-6F349085449F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge - 副本", "Full Metal Revenge - 副本.csproj", "{1C98C502-1962-1800-F4CB-A27BAA5420A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge - 副本.Editor", "Full Metal Revenge - 副本.Editor.csproj", "{90200FB6-EB81-956A-2744-40321DAADFF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Full Metal Revenge - 副本.Editor.Plugins", "Full Metal Revenge - 副本.Editor.Plugins.csproj", "{133D4235-B1C7-EC90-1A4A-7E713E18D2DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE34D2DA-5091-AA61-94AC-6F349085449F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE34D2DA-5091-AA61-94AC-6F349085449F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE34D2DA-5091-AA61-94AC-6F349085449F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE34D2DA-5091-AA61-94AC-6F349085449F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C98C502-1962-1800-F4CB-A27BAA5420A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C98C502-1962-1800-F4CB-A27BAA5420A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C98C502-1962-1800-F4CB-A27BAA5420A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C98C502-1962-1800-F4CB-A27BAA5420A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90200FB6-EB81-956A-2744-40321DAADFF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90200FB6-EB81-956A-2744-40321DAADFF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90200FB6-EB81-956A-2744-40321DAADFF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90200FB6-EB81-956A-2744-40321DAADFF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133D4235-B1C7-EC90-1A4A-7E713E18D2DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133D4235-B1C7-EC90-1A4A-7E713E18D2DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133D4235-B1C7-EC90-1A4A-7E713E18D2DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133D4235-B1C7-EC90-1A4A-7E713E18D2DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

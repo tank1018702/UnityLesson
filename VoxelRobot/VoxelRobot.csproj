@@ -297,6 +297,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Voxel Robots\For Unity\Script\Camera\CameraPlayer.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\Component\Light\LerpLight.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\Component\Robot\Bullet.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\Component\Robot\EnemyWeapon.cs" />
@@ -320,8 +321,10 @@
     <Compile Include="Assets\Voxel Robots\For Unity\Script\Movement\Turret\Turret.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\StageObject.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\StageObject_Sub.cs" />
+    <Compile Include="Assets\Voxel Robots\For Unity\Script\Terrain\EnemyRespawn.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\Text.cs" />
     <Compile Include="Assets\Voxel Robots\For Unity\Script\UI\ShowHP.cs" />
+    <Compile Include="Assets\Voxel Robots\For Unity\Script\UI\UIControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Voxel Robots\For Unity\Resources\Object\BaseAdditive.shader" />
